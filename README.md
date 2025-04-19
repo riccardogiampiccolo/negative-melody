@@ -2,7 +2,7 @@
 
 ![Project Icon](assets/icon.png)
 
-This repository contains the accompanying code for the paper "**Let's Be Negative: On the Application of Negative Harmony to Melody for Symbolic Music Processing**," authored by R. Giampiccolo, A. Bernardini, and A. Sarti, and submitted to _Musicae Scientiae_. This research explores the concept of negative harmony, a theoretical framework for inverting harmonic structures, and applies it to melody for symbolic music processing unveiling the not-bijective nature of the transformation. We present different algorithms that transform melodies by mirroring them around a specific reciprocation axis within a specified key, generating novel musical ideas and variations. Our experiments demonstrate the potential of negative harmony as a creative tool in music composition and analysis.
+This repository contains the accompanying code for the paper "**On the Application of Negative Harmony to Melody for Symbolic Music Processing**," authored by R. Giampiccolo, A. Bernardini, and A. Sarti, and accepted for pubblication in _Computer Music Journal_. This research explores the concept of negative harmony, a theoretical framework for inverting harmonic structures, and applies it to melody for symbolic music processing unveiling the not-bijective nature of the transformation. We present different algorithms that transform melodies by mirroring them around a specific reciprocation axis within a specified key, generating novel musical ideas and variations. Our experiments demonstrate the potential of negative harmony as a creative tool in music composition and analysis.
 
 ## Abstract
 
@@ -25,6 +25,6 @@ In addition to the algorithm, we have developed an audio plug-in that applies th
 - **Customizable Parameters**: Adjust the central axis, key, and other parameters to tailor the harmonic inversion to specific needs.
 - **User-friendly Interface**: An intuitive interface for easy integration into existing workflows.
 
-The audio plug-in will be made available upon acceptance of the paper.
+The audio plug-in will be made available upon pubblication of the paper.
 
 For further details and updates, please refer to the documentation and release notes in this repository. Thank you for your interest in our work!
