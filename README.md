@@ -1,4 +1,4 @@
-# Let's Be Negative: On the Application of Negative Harmony to Melody for Symbolic Music Processing
+# On the Application of Negative Harmony to Melody for Symbolic Music Processing
 
 ![Project Icon](assets/icon.png)
 
