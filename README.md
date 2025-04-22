@@ -33,8 +33,8 @@ In order to reciprocate a given MIDI file, you can use the following line of cod
 | Mode | Name                | Description                                                                 | Parameters Required          |
 |------|---------------------|-----------------------------------------------------------------------------|------------------------------|
 | `le` | Levy                | Reciprocation according to Levy's theory                                    | `-m`, `-g`, `--mode`         |
-| `fa` | Fixed Axis          | Reciprocation with a fixed axis                                             | `-m`, `-g`, `-o`, `--mode`   |
-| `sp` | Same Octave         | Reciprocation to obtain the negative in the same octave                     | `-m`, `-g`, `--mode`         |
+| `fa` | Fixed Axis          | Reciprocation with respect to a fixed axis                                  | `-m`, `-g`, `-o`, `--mode`   |
+| `so` | Same Octave         | Reciprocation to obtain the negative in the same octave                     | `-m`, `-g`, `--mode`         |
 | `cn` | Closest Negative    | Reciprocation to obtain the closest negative                                | `-m`, `-g`, `--mode`         |
 | `ca` | Closeset Axis       | Reciprocation with respect to the closest axis                              | `-m`, `-g`, `--mode`         |
 
