@@ -15,7 +15,47 @@ The code implementing the proposed algorithm for applying negative harmony to me
 - **Melody Processing Scripts**: Scripts to process symbolic music files (e.g., MIDI) and apply the negative harmony transformations.
 - **Examples and Demos**: Example melodies and their negative harmony transformations are available on our [GitHub page](https://riccardogiampiccolo.github.io/negative-melody/).
 
-The code will be made available upon acceptance of the paper.
+### Requirements
+
+- Python 3.8+
+- Required packages:
+  - numpy
+  - pretty_midi
+
+### Usage
+
+In order to reciprocate a given MIDI file, you can use the following line of code in your terminal:
+
+`python main.py [-m MIDI_FILE_NAME.mid] [-g GENERATOR] [-o OCTAVE] [--mode MODE]`
+
+**Modes**
+
+| Mode | Name                | Description                                                                 | Parameters Required          |
+|------|---------------------|-----------------------------------------------------------------------------|------------------------------|
+| `le` | Levy                | Reciprocation according to Levy's theory                                    | `-m`, `-g`, `--mode`         |
+| `fa` | Fixed Axis          | Reciprocation with a fixed axis                                             | `-m`, `-g`, `-o`, `--mode`   |
+| `sp` | Same Octave         | Reciprocation to obtain the negative in the same octave                     | `-m`, `-g`, `--mode`         |
+| `cn` | Closest Negative    | Reciprocation to obtain the closest negative                                | `-m`, `-g`, `--mode`         |
+| `ca` | Closeset Axis       | Reciprocation with respect to the closest axis                              | `-m`, `-g`, `--mode`         |
+
+**Options**
+
+| Short | Long Form     | Type   | Values/Range                          | Default | Description                          |
+|-------|---------------|--------|---------------------------------------|---------|--------------------------------------|
+| `-m`  | `--midi`      | string | Valid file path                       | `""`    | Input MIDI file path                 |
+| `-g`  | `--generator` | string | `C`, `C#`, `D`, `D#`, `E`, `F`, `F#`,<br>`G`, `G#`, `A`, `A#`, `B` | `"C"` | Root musical key                  |
+| `-o`  | `--octave`    | int    | `0`-`10`                              | `4`     | Output octave                        |
+|       | `--mode`      | string | `ca`, `cn`, `le`, `fa`, `so`          | `"ca"`  | Generation algorithm (required)      |
+
+
+### Error Conditions
+
+The script will raise errors for:
+- Invalid mode selection
+- Octave outside 0-10 range
+- Invalid musical key specification
+- Missing input file (when specified)
+
 
 ## Audio Plug-in
 
