@@ -42,7 +42,7 @@ In order to reciprocate a given MIDI file, you can use the following line of cod
 
 | Short | Long Form     | Type   | Values/Range                          | Default | Description                          |
 |-------|---------------|--------|---------------------------------------|---------|--------------------------------------|
-| `-m`  | `--midi`      | string | Valid file path                       | `""`    | Input MIDI file path                 |
+| `-m`  | `--midi`      | string | Valid MIDI file name contained in the "mid" folder                       | `""`    | Input MIDI file path                 |
 | `-g`  | `--generator` | string | `C`, `C#`, `D`, `D#`, `E`, `F`, `F#`,<br>`G`, `G#`, `A`, `A#`, `B` | `"C"` | Root musical key                  |
 | `-o`  | `--octave`    | int    | `0`-`10`                              | `4`     | Output octave                        |
 |       | `--mode`      | string | `ca`, `cn`, `le`, `fa`, `so`          | `"ca"`  | Generation algorithm (required)      |
