@@ -59,12 +59,44 @@ The script will raise errors for:
 
 ## Audio Plug-in
 
-In addition to the algorithm, we have developed an audio plug-in that applies the proposed symbolic music processing algorithms in real-time. This plug-in allows musicians and composers to experiment with negative harmony directly within their digital audio workstations (DAWs). The plug-in features:
+![Negativizer](assets/negativizer.png)
+
+In addition to the algorithm, we have developed an audio plug-in (MIDI effect) that applies the proposed symbolic music processing algorithms in real-time. This plug-in allows musicians and composers to experiment with negative harmony directly within their digital audio workstations (DAWs). The plug-in features:
 
 - **Real-time Processing**: Apply negative harmony transformations to live input or pre-recorded tracks.
 - **Customizable Parameters**: Adjust the central axis, key, and other parameters to tailor the harmonic inversion to specific needs.
 - **User-friendly Interface**: An intuitive interface for easy integration into existing workflows.
 
-The audio plug-in will be made available upon pubblication of the paper.
+#### ✨ Features
+
+- 🎹 Custom virtual keyboard with configurable key range (25 to 88 keys)
+-	🔁 Real-time pitch and controller modulation (Pitch Bend, Mod Wheel, Breath, Foot, and Soft Pedal)
+- 🦶 Sustain pedal support with internal state tracking
+-	🎼 Negative harmony processing modes (Closest Axis, Closest Negative, Fixed Axis, Same Octave)
+- 🧠 Pedal logic ensures correct note-off handling even with fast key presses
+
+#### 📦 Installation
+
+1. Download the `.pkg` installer from the [Releases](#) section.
+2. Run the installer — the plugin will be placed in:
+   ```
+   /Library/Audio/Plug-Ins/Components   (for AU)
+   /Library/Audio/Plug-Ins/VST3         (for VST3)
+   ```
+3. Open your DAW and rescan plugins if necessary.
+4. The company name is _ISPL_.
+
+#### 🧩 Usage
+
+- Load the plugin on a MIDI track.
+- Route its output to a virtual instrument.
+- Use the plug-in’s UI to select harmony modes and adjust CC behavior.
+- Pedal emulation works even without a physical sustain pedal connected.
+
+#### 🛠 Compatibility
+
+- macOS (Intel & Apple Silicon), no Windows support
+- VST3 and AU supported
+- Tested with Logic Pro, Ableton Live, and Reaper
 
 For further details and updates, please refer to the documentation and release notes in this repository. Thank you for your interest in our work!
