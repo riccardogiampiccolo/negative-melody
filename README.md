@@ -77,7 +77,7 @@ In addition to the algorithm, we have developed an audio plug-in (MIDI effect) t
 
 #### 📦 Installation
 
-1. Download the `.pkg` installer from the [Releases](#) section.
+1. Download the `.pkg` installer from the "plug-in" folder.
 2. Run the installer — the plugin will be placed in:
    ```
    /Library/Audio/Plug-Ins/Components   (for AU)
